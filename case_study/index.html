@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Seminar Schedule Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Seminar Schedule Planner</h1>
+        <p class="subtitle">Edit any topic and it will remain saved after reload</p>
+
+        <table>
+
+            <!-- Main Heading -->
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+
+            <!-- Schedule and Topic -->
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+
+            <!-- Begin and End -->
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+
+            <!-- Monday -->
+            <tr>
+                <td rowspan="2" class="day">Monday</td>
+
+                <td rowspan="2" class="begin">
+                    8:00 a.m.
+                </td>
+
+                <td rowspan="2" class="end">
+                    5:00 p.m.
+                </td>
+
+                <td class="topic">
+                    <span id="topic0"></span>
+
+                    <button onclick="editTopic(0)">
+                        Edit
+                    </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="topic">
+                    <span id="topic1"></span>
+
+                    <button onclick="editTopic(1)">
+                        Edit
+                    </button>
+                </td>
+            </tr>
+
+            <!-- Tuesday -->
+            <tr>
+                <td rowspan="3" class="day">Tuesday</td>
+
+                <td class="begin">
+                    8:00 a.m.
+                </td>
+
+                <td class="end">
+                    11:00 a.m.
+                </td>
+
+                <td rowspan="2" class="topic">
+                    <span id="topic2"></span>
+
+                    <button onclick="editTopic(2)">
+                        Edit
+                    </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="begin">
+                    11:00 a.m.
+                </td>
+
+                <td class="end">
+                    2:00 p.m.
+                </td>
+            </tr>
+
+            <tr>
+                <td class="begin">
+                    2:00 p.m.
+                </td>
+
+                <td class="end">
+                    5:00 p.m.
+                </td>
+
+                <td class="topic">
+                    <span id="topic3"></span>
+
+                    <button onclick="editTopic(3)">
+                        Edit
+                    </button>
+                </td>
+            </tr>
+
+            <!-- Wednesday -->
+            <tr>
+                <td class="day">Wednesday</td>
+
+                <td class="begin">
+                    8:00 a.m.
+                </td>
+
+                <td class="end">
+                    12:00 p.m.
+                </td>
+
+                <td class="topic">
+                    <span id="topic4"></span>
+
+                    <button onclick="editTopic(4)">
+                        Edit
+                    </button>
+                </td>
+            </tr>
+
+        </table>
+
+        <div class="storage-info">
+            <p>
+                <strong>Storage:</strong>
+                Topics → Local Storage
+                | Day & Schedule → Fixed
+            </p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
